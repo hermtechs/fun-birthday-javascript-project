@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat&display=swap');
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cake {
+  top:20%;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 20% auto 15%;
+  background: #f5c8d5;
+  position: relative;
+  border-radius: 13px;
+  transform: rotateY(70deg) scale(3);
+}
+.cake .top, .cake .bottom {
+  width: 98%;
+  height: 77px;
+  border-radius: 50%;
+  background: #ffd7de;
+  text-align: center;
+  position: absolute;
+}
+.cake  .top input:checked + .candles .candle-to-blow:after {
+  animation: blowout 2.3s ease-in forwards;
+}
+.cake .top .candles, .cake .bottom .candles {
+  position: absolute;
+  z-index: 3;
+  left: -35px;
+  right: 0;
+  margin: auto;
+  top: -7px;
+  width: 330px;
+  height: 66px;
+  transform: scaleX(6) scaleY(1.1);
+  position: relative;
+  width: 330px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  margin: 0 auto 0;
+}
+.cake .top .candles > *, .cake .bottom .candles > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  margin: -0.5px;
+}
+.cake .top .candles > *:nth-of-type(1), .cake .bottom .candles > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(30px) rotate(0deg);
+}
+.cake .top .candles > *:nth-of-type(2), .cake .bottom .candles > *:nth-of-type(2) {
+  transform: rotate(10.9090909091deg) translate(30px) rotate(-10.9090909091deg);
+}
+.cake .top .candles > *:nth-of-type(3), .cake .bottom .candles > *:nth-of-type(3) {
+  transform: rotate(21.8181818182deg) translate(30px) rotate(-21.8181818182deg);
+}
+.cake .top .candles > *:nth-of-type(4), .cake .bottom .candles > *:nth-of-type(4) {
+  transform: rotate(32.7272727273deg) translate(30px) rotate(-32.7272727273deg);
+}
+.cake .top .candles > *:nth-of-type(5), .cake .bottom .candles > *:nth-of-type(5) {
+  transform: rotate(43.6363636364deg) translate(30px) rotate(-43.6363636364deg);
+}
+.cake .top .candles > *:nth-of-type(6), .cake .bottom .candles > *:nth-of-type(6) {
+  transform: rotate(54.5454545455deg) translate(30px) rotate(-54.5454545455deg);
+}
+.cake .top .candles > *:nth-of-type(7), .cake .bottom .candles > *:nth-of-type(7) {
+  transform: rotate(65.4545454545deg) translate(30px) rotate(-65.4545454545deg);
+}
+.cake .top .candles > *:nth-of-type(8), .cake .bottom .candles > *:nth-of-type(8) {
+  transform: rotate(76.3636363636deg) translate(30px) rotate(-76.3636363636deg);
+}
+.cake .top .candles > *:nth-of-type(9), .cake .bottom .candles > *:nth-of-type(9) {
+  transform: rotate(87.2727272727deg) translate(30px) rotate(-87.2727272727deg);
+}
+.cake .top .candles > *:nth-of-type(10), .cake .bottom .candles > *:nth-of-type(10) {
+  transform: rotate(98.1818181818deg) translate(30px) rotate(-98.1818181818deg);
+}
+.cake .top .candles > *:nth-of-type(11), .cake .bottom .candles > *:nth-of-type(11) {
+  transform: rotate(109.0909090909deg) translate(30px) rotate(-109.0909090909deg);
+}
+.cake .top .candles > *:nth-of-type(12), .cake .bottom .candles > *:nth-of-type(12) {
+  transform: rotate(120deg) translate(30px) rotate(-120deg);
+}
+.cake .top .candles > *:nth-of-type(13), .cake .bottom .candles > *:nth-of-type(13) {
+  transform: rotate(130.9090909091deg) translate(30px) rotate(-130.9090909091deg);
+}
+.cake .top .candles > *:nth-of-type(14), .cake .bottom .candles > *:nth-of-type(14) {
+  transform: rotate(141.8181818182deg) translate(30px) rotate(-141.8181818182deg);
+}
+.cake .top .candles > *:nth-of-type(15), .cake .bottom .candles > *:nth-of-type(15) {
+  transform: rotate(152.7272727273deg) translate(30px) rotate(-152.7272727273deg);
+}
+.cake .top .candles > *:nth-of-type(16), .cake .bottom .candles > *:nth-of-type(16) {
+  transform: rotate(163.6363636364deg) translate(30px) rotate(-163.6363636364deg);
+}
+.cake .top .candles > *:nth-of-type(17), .cake .bottom .candles > *:nth-of-type(17) {
+  transform: rotate(174.5454545455deg) translate(30px) rotate(-174.5454545455deg);
+}
+.cake .top .candles > *:nth-of-type(18), .cake .bottom .candles > *:nth-of-type(18) {
+  transform: rotate(185.4545454545deg) translate(30px) rotate(-185.4545454545deg);
+}
+.cake .top .candles > *:nth-of-type(19), .cake .bottom .candles > *:nth-of-type(19) {
+  transform: rotate(196.3636363636deg) translate(30px) rotate(-196.3636363636deg);
+}
+.cake .top .candles > *:nth-of-type(20), .cake .bottom .candles > *:nth-of-type(20) {
+  transform: rotate(207.2727272727deg) translate(30px) rotate(-207.2727272727deg);
+}
+.cake .top .candles > *:nth-of-type(21), .cake .bottom .candles > *:nth-of-type(21) {
+  transform: rotate(218.1818181818deg) translate(30px) rotate(-218.1818181818deg);
+}
+.cake .top .candles > *:nth-of-type(22), .cake .bottom .candles > *:nth-of-type(22) {
+  transform: rotate(229.0909090909deg) translate(30px) rotate(-229.0909090909deg);
+}
+.cake .top .candles > *:nth-of-type(23), .cake .bottom .candles > *:nth-of-type(23) {
+  transform: rotate(240deg) translate(30px) rotate(-240deg);
+}
+.cake .top .candles > *:nth-of-type(24), .cake .bottom .candles > *:nth-of-type(24) {
+  transform: rotate(250.9090909091deg) translate(30px) rotate(-250.9090909091deg);
+}
+.cake .top .candles > *:nth-of-type(25), .cake .bottom .candles > *:nth-of-type(25) {
+  transform: rotate(261.8181818182deg) translate(30px) rotate(-261.8181818182deg);
+}
+.cake .top .candles > *:nth-of-type(26), .cake .bottom .candles > *:nth-of-type(26) {
+  transform: rotate(272.7272727273deg) translate(30px) rotate(-272.7272727273deg);
+}
+/* .cake .top .candles > *:nth-of-type(27), .cake .bottom .candles > *:nth-of-type(27) {
+  transform: rotate(283.6363636364deg) translate(30px) rotate(-283.6363636364deg);
+}
+.cake .top .candles > *:nth-of-type(28), .cake .bottom .candles > *:nth-of-type(28) {
+  transform: rotate(294.5454545455deg) translate(30px) rotate(-294.5454545455deg);
+}
+.cake .top .candles > *:nth-of-type(29), .cake .bottom .candles > *:nth-of-type(29) {
+  transform: rotate(305.4545454545deg) translate(30px) rotate(-305.4545454545deg);
+}
+.cake .top .candles > *:nth-of-type(30), .cake .bottom .candles > *:nth-of-type(30) {
+  transform: rotate(316.3636363636deg) translate(30px) rotate(-316.3636363636deg);
+}
+.cake .top .candles > *:nth-of-type(31), .cake .bottom .candles > *:nth-of-type(31) {
+  transform: rotate(327.2727272727deg) translate(30px) rotate(-327.2727272727deg);
+}
+.cake .top .candles > *:nth-of-type(32), .cake .bottom .candles > *:nth-of-type(32) {
+  transform: rotate(338.1818181818deg) translate(30px) rotate(-338.1818181818deg);
+}
+.cake .top .candles > *:nth-of-type(33), .cake .bottom .candles > *:nth-of-type(33) {
+  transform: rotate(349.0909090909deg) translate(30px) rotate(-349.0909090909deg);
+} */
+.cake .top .candle, .cake .bottom .candle {
+  display: block;
+  max-width: 100%;
+  width: 2px;
+  height: 11px;
+  border-radius: 5px;
+  background: crimson;
+  margin: 5px;
+}
+.cake .top .candle:after, .cake .bottom .candle:after {
+  content: "";
+  background: orange;
+  box-shadow: 0px 0px 0px 1px #ffd5097a;
+  width: 2px;
+  height: 6px;
+  border-radius: 50%;
+  top: -5px;
+  left: 0px;
+  z-index: 3;
+  opacity: 0.7;
+  position: absolute;
+  transition: 0.7s ease-in;
+  animation: flicker 1.5s ease-in-out infinite alternate;
+}
+.cake .top .candle:nth-of-type(3n+3):after, .cake .bottom .candle:nth-of-type(3n+3):after {
+  animation: flickerleft 1.5s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+.cake .top {
+  top: -30px;
+  z-index: 2;
+  border: 3px dotted #ffe5e9;
+  border-top: 0;
+}
+.cake .bottom {
+  position: absolute;
+  bottom: -30px;
+  background: #f5c8d5;
+}
+
+/* h1 {
+  text-align: center;
+  color: crimson;
+  font-size: 50px;
+  font-family: "Homemade Apple", cursive;
+} */
+
+@keyframes flicker {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-9deg) scale(0.7);
+  }
+}
+@keyframes flickerleft {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(9deg) scale(0.8);
+  }
+}
+input {
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  height: 105px;
+  width: 393px;
+  left: 0;
+  cursor: pointer;
+}
+
+@keyframes blowout {
+  20% {
+    background: #ccc;
+    box-shadow: 0px 0px 0px 1px #ccc;
+    opacity: 0.6;
+    transform: translateY(-5px) scaleX(0.6);
+  }
+  50%, 100% {
+    background: #ccc;
+    opacity: 0;
+    height: 30px;
+    transform: translateY(-30px) scaleX(0.2);
+  }
+}
+
+
+/* typing effect happy birthday text */
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #004cff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #004cff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #004cff }
+}
